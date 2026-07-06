@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — SESRA (Lead Finder)</title>
+  <meta name="description" content="Privacy Policy for the SESRA (Lead Finder) browser extension by Increments Inc." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f6f3ec; --paper-2: #efeade; --ink: #1c1830; --ink-soft: #4a4560;
+      --line: #ded7c6; --brand: #4f46e5; --brand-deep: #2f2a7a; --gold: #b8860b; --gold-soft: #c8912a;
+      --display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #131019; --paper-2: #1b1726; --ink: #ece8f8; --ink-soft: #a49fc0;
+        --line: #2c2740; --brand: #8b82f5; --brand-deep: #b3acff; --gold: #e0b13a; --gold-soft: #d8a838;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--body); font-size: 16px; line-height: 1.68;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .masthead {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 0 18px; border-bottom: 1px solid var(--line);
+    }
+    .mark { display: flex; align-items: center; gap: 11px; }
+    .mark img { width: 34px; height: 34px; }
+    .mark b { font-family: var(--display); font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+    .mark span { color: var(--ink-soft); font-size: 13px; font-family: var(--display); }
+    .nav a { color: var(--ink-soft); text-decoration: none; font-size: 14px; font-family: var(--display); margin-left: 20px; }
+    .nav a:hover { color: var(--ink); }
+    @media (max-width: 560px) { .nav { display: none; } }
+
+    .doc-head { padding: 56px 0 8px; }
+    .eyebrow {
+      font-family: var(--display); font-size: 12.5px; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 14px;
+    }
+    h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(34px, 5vw, 48px); line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 12px; }
+    .meta { color: var(--ink-soft); font-size: 14px; font-family: var(--display); margin: 0 0 4px; }
+
+    .intro { font-size: 18px; color: var(--ink-soft); max-width: 62ch; margin: 26px 0 0; }
+
+    .tldr {
+      background: var(--paper-2); border: 1px solid var(--line); border-left: 3px solid var(--gold-soft);
+      border-radius: 10px; padding: 18px 20px; margin: 30px 0 8px; font-size: 15.5px; max-width: 68ch;
+    }
+    .tldr b { font-family: var(--display); }
+
+    section { padding: 30px 0; border-top: 1px solid var(--line); }
+    section:first-of-type { margin-top: 28px; }
+    h2 {
+      font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 14px;
+      display: flex; align-items: baseline; gap: 12px;
+    }
+    h2 .idx { color: var(--brand-deep); font-size: 12px; letter-spacing: 0.05em; }
+    h3 { font-family: var(--display); font-size: 15px; margin: 20px 0 6px; }
+    p { max-width: 68ch; margin: 0 0 13px; }
+    p.lead-line { font-size: 16.5px; }
+    ul { max-width: 68ch; margin: 0 0 13px; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--brand); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--brand) 35%, transparent); }
+    a:hover { border-bottom-color: var(--brand); }
+    code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 13px; background: var(--paper-2); padding: 1px 6px; border-radius: 5px; border: 1px solid var(--line); }
+
+    .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 6px 0 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 520px; }
+    th, td { text-align: left; padding: 11px 14px; border: 1px solid var(--line); vertical-align: top; }
+    th { background: var(--paper-2); font-family: var(--display); font-weight: 600; font-size: 13px; }
+
+    footer {
+      border-top: 1px solid var(--line); margin-top: 20px; padding: 28px 0 60px;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+      font-size: 14px; color: var(--ink-soft);
+    }
+    footer nav a { color: var(--ink-soft); font-family: var(--display); text-decoration: none; border: 0; margin-left: 18px; }
+    footer nav a:hover { color: var(--ink); }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="mark">
+        <img src="logo.png" alt="SESRA logo" />
+        <b>SESRA</b><span>by Increments Inc</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:msi.shamim@incrementsinc.com">Contact</a>
+      </nav>
+    </header>
+
+    <div class="doc-head">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated 7 July 2026 · Increments Inc</p>
+      <p class="intro">
+        How the SESRA (Lead Finder) browser extension handles information when you use it. By installing
+        and using the Extension you agree to the practices described here.
+      </p>
+      <div class="tldr">
+        <b>The short version.</b> The Extension runs in your own browser. It sends the content you choose
+        to capture to Google's Gemini AI to extract lead details, and writes the resulting leads to a
+        Google Sheet you own. Your leads are stored locally. We run no server that collects your data, we
+        don't sell data, and we don't use it for advertising.
+      </div>
+    </div>
+
+    <section>
+      <h2><span class="idx">01</span> Who we are</h2>
+      <p class="lead-line">
+        The Extension is published by Increments Inc. For any privacy question or request, contact
+        <a href="mailto:msi.shamim@incrementsinc.com">msi.shamim@incrementsinc.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="idx">02</span> What the Extension processes</h2>
+      <p>Only when you actively trigger an action, the Extension processes:</p>
+      <ul>
+        <li><strong>Page content you capture</strong> — the readable text of a page you click Capture on, so a lead can be extracted.</li>
+        <li><strong>Lead details</strong> — names, companies, roles, emails, phone numbers, website and social links, and notes.</li>
+        <li><strong>Your settings</strong> — targeting preferences, model choice, and the ID of the Google Sheet you connect.</li>
+        <li><strong>Your Gemini API key</strong> — a key you provide, used to authenticate your own calls to Google's Gemini API.</li>
+        <li><strong>Google authorization</strong> — an OAuth access token that lets the Extension write to the specific Sheet you choose.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="idx">03</span> Where data is stored</h2>
+      <ul>
+        <li><strong>Locally in your browser.</strong> Your captured leads and Gemini API key are stored on your device using the browser's extension storage — not transmitted to any Increments Inc server.</li>
+        <li><strong>Your settings</strong> (excluding the API key) may sync across your own signed-in Chrome browsers via Google's built-in extension sync.</li>
+        <li><strong>No backend.</strong> Increments Inc operates no server for this Extension and has no access to your leads, keys, or Google data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="idx">04</span> Third-party services &amp; sharing</h2>
+      <p>To do its job, the Extension sends data to the following, at your direction:</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Service</th><th>What is sent</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Google Gemini API</td><td>Captured page text, and lead details being enriched</td><td>To extract and enrich leads with AI, authenticated by your own key.</td></tr>
+            <tr><td>Google Sheets API</td><td>The lead rows you push</td><td>To write leads into the Sheet you own. Write-only — it never reads your other sheets.</td></tr>
+            <tr><td>WhatsApp Web (optional)</td><td>A phone number you choose to check, via your own session</td><td>To check whether a number is on WhatsApp. No message is ever sent.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Use of these services is also governed by their own terms and privacy policies, including Google's
+        (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).
+        We share your data with no other third parties, and we do not sell it.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="idx">05</span> Google API scopes &amp; Limited Use</h2>
+      <p>
+        The Extension requests the <code>auth/spreadsheets</code> scope solely to create and update the
+        Google Sheet you designate as your lead pipeline. Its use of information received from Google APIs
+        adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>,
+        including the Limited Use requirements: data obtained through Google APIs is used only to provide
+        and improve user-facing features, is not transferred to others except to provide those features,
+        is not used for advertising, and is not read by humans except for security, to comply with law, or
+        with your explicit consent.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="idx">06</span> How long data is kept</h2>
+      <p>
+        Leads and settings stay in your browser's storage until you delete them — via "Clear pipeline
+        data", by removing individual leads, or by uninstalling the Extension. Data written to your Google
+        Sheet stays under your control in your own Google account. Disconnecting Google Sheets in Settings
+        deletes the stored access token from your browser.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="idx">07</span> Your choices</h2>
+      <ul>
+        <li>Delete all locally stored leads any time from Settings.</li>
+        <li>Disconnect your Google account any time, removing the stored access token.</li>
+        <li>Uninstall the Extension to remove its local storage.</li>
+        <li>Manage or delete data in your Google Sheet directly in Google Sheets.</li>
+        <li>Contact us with any question about the data the Extension processes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="idx">08</span> Children</h2>
+      <p>The Extension is a business tool and is not directed to children under 16.</p>
+    </section>
+
+    <section>
+      <h2><span class="idx">09</span> Changes</h2>
+      <p>
+        We may update this policy from time to time. Material changes are reflected by updating the "Last
+        updated" date above. Continued use after an update constitutes acceptance of the revised policy.
+      </p>
+    </section>
+
+    <footer>
+      <div>© 2026 Increments Inc · <a href="mailto:msi.shamim@incrementsinc.com" style="border:0">msi.shamim@incrementsinc.com</a></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
